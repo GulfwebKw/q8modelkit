@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+
+.my_title {
+  /* font-weight:bold;
+	color:#f29a33 !important;
+	font-size:25px; */
+  margin: 0 0 100px 0;
+}
+
+.my_padding li {
+  padding: 0 40px !important;
+}
+
+.pro_tags{ text-align:center;}
+.pro_tags a{margin:5px 2px;}
+
+.pro_tags img{ width:30px !important; height:30px !important;}
+
+
+.footer_logo {
+  width: 45%;
+  height: auto;
+}
+
+.footer_social li {
+  background: #f29a33;
+  color: #fff !important;
+  padding: 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.cap {
+  background: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  float: right;
+  margin: 0 5px;
+}
+.cap img {
+  width: 100%;
+  height: auto;
+}
+
+.desk_hide {
+  display: none;
+}
+
+.cod {
+  width: 50px;
+  height: auto;
+}
+
+.search_ico {
+  width: 20px;
+  height: auto;
+}
+
+.my_cart {
+  width: 22px !important;
+  height: auto;
+  margin: 0 10px 0 0;
+  float: left;
+  border-radius:none !important;
+  -webkit-border-radius:none !important;
+  -moz-border-radius:none !important;
+}
+
+.desk_sidemenu {
+  width: 40px !important;
+  height: auto;
+}
+
+.sub_cate {
+  background: #fff1e1;
+  border-radius: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.sub_ico {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.sub_ico img {
+  width: 10px;
+  height: auto;
+}
+
+/* Readmore */
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+
+.tt-block-title .tt-title a:before {
+  height: 0px !important;
+}
+
+.pagination{list-style:none; margin:0 0 0 45%;}
+.pagination li{float:left; padding:13px 15px 10px 15px; color:#606060; font-size:20px; border:solid 1px #e6e7e8; background:#f1f3f8; line-height:25px;}
+.pagination li:first-child, .pagination li:last-child{font-size:35px;}
+.pagination li a:link, .pagination li a:visited, .pagination li a:active, .pagination li a:hover{display:block;}
+.pagination li:hover, .pagination li:active, .pagination li a:active, .pagination li a:hover{background:#f29a33; color:#ffffff;}
+
+.pagination li:first-child{border-radius:15px 0 0 15px; -moz-border-radius:15px 0 0 15px; -webkit-border-radius:15px 0 0 15px;}
+.pagination li:last-child{border-radius:0 15px 15px 0; -moz-border-radius:0 15px 15px 0; -webkit-border-radius:0 15px 15px 0;}
+
+
+.tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown:first-child .dropdown-menu, .tt-desctop-menu .dropdown .dropdown-menu {width:400px;}
+
+/*iPod, Tablet Devices*/
+@media all and (max-width: 999px) and (min-width: 480px) {
+}
+
+/*Mobile Devices.*/
+@media all and (max-width: 480px) and (min-width: 320px) {
+	
+.tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown:first-child .dropdown-menu, .tt-desctop-menu .dropdown .dropdown-menu {width:60%;}
+	
+iframe{width:100% !important; height:auto;}
+
+.tt-desctop-menu .dropdown .dropdown-menu {padding-right:15px !important; left:60px !important;}
+
+  .tt-tabs-default li > a {
+    margin: 5px;
+  }
+  
+  .btn{font-size: 14px !important;}
+
+  .mob_hide {
+    display: none !important;
+  }
+
+  .mobile_menu {
+    width: 25px;
+    height: auto;
+  }
+
+  .my_padding li {
+    padding: 0 13px !important;
+  }
+
+  .my_category {
+    flex-wrap: nowrap !important;
+    width: 200% !important;
+  }
+
+  .my_scroll {
+    overflow: scroll;
+  }
+
+  .desk_hide {
+    display: block;
+  }
+  
+.pro_tags{ margin:5px 0;}
+}

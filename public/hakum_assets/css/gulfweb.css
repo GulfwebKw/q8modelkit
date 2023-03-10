@@ -1,0 +1,150 @@
+.tagimg{
+border:1px #CCCCCC solid;
+margin:2px;
+padding:2px;
+width:20px;
+height:20px;
+border-radius:5px;
+float:right;
+}
+.tagtxt{
+border:1px #CCCCCC solid;
+margin:2px;
+padding:2px;
+width:20px;
+height:20px;
+border-radius:5px;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+.mobilehide{display:none !important;}
+.tt-social-icon li a {
+border: 1px #b57746 solid;
+border-radius:4px;
+font-size:24px !important;
+}
+}
+@media (min-width: 700px) {
+.mobilehide{display:block !important;}
+.tt-social-icon li a {
+border: 1px #ffffff solid;
+border-radius:4px;
+font-size:24px !important;
+}
+}
+.tt-stuck-parent-menu .icon-03{
+color:#ffffff !important;
+}
+.thumbprod-center-border{
+border:1px #CCCCCC solid !important;
+}
+.tt-label-location-float{
+position:absolute;
+padding:5px;
+border-radius:5px;
+}
+.tt-title-custom{
+min-height:80px;
+}
+.tt-title-span span{
+border:1px #b57746 solid;
+padding:5px;
+font-size:26px;
+font-weight:bold;
+text-transform:uppercase;
+color:#b57746;
+border-radius:2px;
+}
+.optionradio{
+list-style:none;
+margin-left:-35px;
+}
+.optionradio li{
+float:left;
+margin-right:10px;
+font-size:14px;
+font-weight:normal;
+vertical-align:middle;
+}
+.optionradio input[type=radio],input[type=checkbox]{
+height:16px;
+width:16px;
+}
+/* .tp-banner-container{height:750px !important;} */
+/*.tt-stuck-nav button i::before, .tt-stuck-parent-menu i::before, .tt-stuck-parent-multi button{color:#b57746;}*/
+
+.tt-multi-obj button{background:none; margin:0;}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:120px;
+	right:10px;
+	text-align:center;
+	font-size:30px;
+	z-index:100;
+}
+.my-float {
+    margin-top: 16px;
+}
+.trackorder{font-size:12px!important;}
+.topheadernote{
+background-color: #FC0;color:#000;padding:2px;text-align:center;
+}
+.languageButton{
+border:0;
+background-color:#ffffff;
+color:#b57746;
+font-size:19px;
+font-weight:bold;
+margin-top:5px;
+cursor:pointer;
+}
+.error{
+color:#FF0000;
+}
+/*font color for order status*/
+.pending{color:#F60;}
+.completed{color:#009900;}
+.canceled{color:#ff0000;}
+.returned{color:#03F;}
+/*alert box*/
+.alert-danger{
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.alert-success{
+  padding: 20px;
+  background-color:#BCEEB5; /* Red */
+  color: #006633;
+  margin-bottom: 15px;
+  font-size:16px;
+}
+.textureattr{
+	list-style:none;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.textureattr li{
+	float:left;
+	min-width:40px;
+	min-height:40px;
+	margin:1px;
+}
+/*pagination*/
+.pagination{display:-ms-flexbox;display:flex;padding-left:0;list-style:none;border-radius:.25rem}.page-link{position:relative;display:block;padding:.5rem .75rem;margin-left:-1px;line-height:1.25;color:#007bff;background-color:#fff;border:1px solid #dee2e6}.page-link:hover{z-index:2;color:#0056b3;text-decoration:none;background-color:#e9ecef;border-color:#dee2e6}.page-link:focus{z-index:3;outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25)}.page-item:first-child .page-link{margin-left:0;border-top-left-radius:.25rem;border-bottom-left-radius:.25rem}.page-item:last-child .page-link{border-top-right-radius:.25rem;border-bottom-right-radius:.25rem}.page-item.active .page-link{z-index:3;color:#fff;background-color:#007bff;border-color:#007bff}.page-item.disabled .page-link{color:#6c757d;pointer-events:none;cursor:auto;background-color:#fff;border-color:#dee2e6}.pagination-lg .page-link{padding:.75rem 1.5rem;font-size:1.25rem;line-height:1.5}.pagination-lg .page-item:first-child .page-link{border-top-left-radius:.3rem;border-bottom-left-radius:.3rem}.pagination-lg .page-item:last-child .page-link{border-top-right-radius:.3rem;border-bottom-right-radius:.3rem}.pagination-sm .page-link{padding:.25rem .5rem;font-size:.875rem;line-height:1.5}.pagination-sm .page-item:first-child .page-link{border-top-left-radius:.2rem;border-bottom-left-radius:.2rem}.pagination-sm .page-item:last-child .page-link{border-top-right-radius:.2rem;border-bottom-right-radius:.2rem}
+
+.deals {
+    background: #df1629 !important;
+}
+
+.price_red{
+color:#f8353e !important;
+}
+.price_black{
+color:#191919 !important;
+}

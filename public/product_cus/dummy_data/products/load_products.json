@@ -1,0 +1,16 @@
+{
+    "status": true,
+    "products": [
+        {
+            "id": "1221",
+            "name": "test item name",
+            "price": 12,
+            "category": "default",
+            "currency": "KD",
+            "image": "/uploads/product/p-a1b92e4c460dc231b358c22518fb4ee4.jpeg",
+            "sub_images": [],
+            "description": "test item name"
+        }
+    ],
+    "message": "Products Loaded Successfully"
+}
