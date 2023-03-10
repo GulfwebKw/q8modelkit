@@ -521,6 +521,7 @@ Route::group(['middleware' => ['admin']], function () {
 
 
 //setting
+Route::get('/guest/export', 'AdminExportController@export_guest')->name('guest-export');
 Route::group(['middleware' => ['admin']], function () {
 	Route::post('/gwc/general-settings/{keyname}', 'AdminSettingsController@update');
 	Route::get('/gwc/settings/deletefavicon/', 'AdminSettingsController@deleteFavicon');

@@ -144,7 +144,25 @@ $theme    = $settings->theme;
                                                   <a style="margin-left:5px;" href="{{url('gwc/export_product_google/ar')}}" class="btn btn-success btn-sm pull-right">{{__('adminMessage.export')}}(Ar)</a>
                                                   </div>
                                                  </div>
-                                                 
+
+
+												   <div class="row">
+													   <div class="col-lg-6">
+														   <div class="form-group">
+															   <label>Guest Export</label>
+														   </div>
+													   </div>
+
+													   <div class="col-lg-6">
+														   <div class="input-group">
+															   <input type="text" class="form-control" id="gustFeedUrl" value="{{ route('guest-export') }}">
+															   <div class="input-group-append">
+																   <button class="btn btn-default btn-icon" onclick="copyToClipboardLink()" type="button"><i class="fa fa-copy"></i></button>
+															   </div>
+														   </div>
+													   </div>
+												   </div>
+
                                                 </div>
                                                <!--end sms box --> 
                                                
@@ -269,6 +287,13 @@ $theme    = $settings->theme;
         .catch( error => {
             console.error( error );
         } );
+
+		function copyToClipboardLink() {
+			var textBox = document.getElementById('gustFeedUrl');
+			textBox.select();
+			document.execCommand("copy");
+			toastr.success("URL copied.");
+		}
        </script>
 
 	</body>

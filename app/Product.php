@@ -21,6 +21,10 @@ class Product extends Model
 	            ->join('gwc_categories', 'gwc_categories.id', '=', 'gwc_products_category.category_id');
 	}
 
+	public function categories(){
+	    return $this->hasMany(ProductCategory::class,'product_id','id');
+	}
+
 
     /**
      * check product is bundle or no

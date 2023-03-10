@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\ProductGuestExport;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
@@ -48,6 +49,15 @@ class AdminExportController  extends Controller
     {
         
 		return Excel::download(new ProductExport($request->brand), 'product.xlsx');
+    }
+
+    /** Export Product
+    * @return \Illuminate\Support\Collection
+    */
+    public function export_guest(Request $request)
+    {
+
+		return Excel::download(new ProductGuestExport($request), 'product.xlsx');
     }
 	
 	/** Export Product

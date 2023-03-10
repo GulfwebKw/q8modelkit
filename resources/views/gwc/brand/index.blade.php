@@ -166,6 +166,7 @@ $theme    = $settings->theme;
                                                  <div class="dropdown-menu dropdown-menu-right">
                                                  <ul class="kt-nav">
                                                  <li class="kt-nav__item"><a href="{{url('gwc/export_product')}}?brand={{$brandList->id}}" class="kt-nav__link"><i class="kt-nav__link-icon flaticon2-download"></i><span class="kt-nav__link-text">{{__('adminMessage.export')}}</span><span class="pull-right">({{count($brandList->products)}})</span></a></li>
+                                                 <li class="kt-nav__item"><div onclick="copyContent('{{route('guest-export' , ['brand' => $brandList->id ] )}}')" class="kt-nav__link"><i class="kt-nav__link-icon flaticon2-download"></i><span class="kt-nav__link-text">Copy Export Link</span></div></li>
                                                  <li class="kt-nav__item"><a href="{{url('gwc/product')}}?brand_id={{$brandList->id}}" class="kt-nav__link"><i class="kt-nav__link-icon flaticon2-list"></i><span class="kt-nav__link-text">{{__('adminMessage.listproduct')}}</span><span class="pull-right">({{count($brandList->products)}})</span></a></li>
                                                  @if(auth()->guard('admin')->user()->can('brand-edit'))
                                                  <li class="kt-nav__item"><a href="{{url('gwc/brand/'.$brandList->id.'/edit')}}" class="kt-nav__link"><i class="kt-nav__link-icon flaticon2-contract"></i><span class="kt-nav__link-text">{{__('adminMessage.edit')}}</span></a></li>
@@ -267,6 +268,16 @@ $theme    = $settings->theme;
 	 
 	 });
 	});
+
+	const copyContent = async (text) => {
+		try {
+			await navigator.clipboard.writeText(text);
+			toastr.success("URL copied to clipboard.");
+		} catch (err) {
+			toastr.error("Failed to copy:<br>" + text);
+		}
+	}
+
 	</script>
 	</body>
 	<!-- end::Body -->

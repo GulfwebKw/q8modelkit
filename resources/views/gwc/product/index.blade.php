@@ -170,6 +170,12 @@ $theme    = $settings->theme;
 												 </li>
                                                  <li class="kt-nav__item"><hr></li>
                                                  <li class="kt-nav__item">
+											     <a href="javascript:;" class="kt-nav__link" onclick="copyContent('{{route('guest-export' ,  request()->toArray()  )}}')">
+												 <i class="kt-nav__link-icon flaticon-download"></i>
+												 <span class="kt-nav__link-text">Copy Filtered Export Link</span>
+												 </a>
+												 </li>
+                                                 <li class="kt-nav__item">
 											     <a href="javascript:;" class="kt-nav__link btn-warning resetProductFilters" id="1">
 												 <i class="kt-nav__link-icon flaticon-delete"></i>
 												 <span class="kt-nav__link-text">{{__('adminMessage.resetfilyeration')}}</span>
@@ -539,6 +545,16 @@ $theme    = $settings->theme;
 	 });
 	 
 	});
+
+
+	const copyContent = async (text) => {
+		try {
+			await navigator.clipboard.writeText(text);
+			toastr.success("URL copied to clipboard.");
+		} catch (err) {
+			toastr.error("Failed to copy:<br>" + text);
+		}
+	}
 	</script>
 	</body>
 	<!-- end::Body -->
